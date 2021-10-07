@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<body>
+    <p>
+        Селектор знаходиться на початку CSS-правила, до фігурних дужок, і визначає до яких HTML-елементів застосуються властивості і значення з правила.  
+        Найпростіші (і найпопулярніші) селектори - це селектори за тегами і по класах.  Селектори за тегами містять ім'я тега без символів <і> і застосовуються до всіх відповідних тегів. Селектори по класах починаються з точки, за якою йде ім'я класу, і застосовуються до всіх тегам з відповідним атрибутом class.
+    </p>
+    <p>Селектори класу:</p>
+    <pre><code>
+    <img src="../../../imgs/table2.png" width="200" height="150">
+    .main {
+           
+        display: flex;
+        max-width: 100%;
+    }
+    .block{
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    <img src="../../../imgs/ph2.png" width="200" height="150">
+    .section {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+    </code></pre>
+    <p>Селектори тегу: </p>
+    <pre><code>
+    <img src="../../../imgs/table2.png" width="200" height="150">
+    td {
+        background-color: #3366CC; 
+    }
+    </code></pre>
+    
+</body>
+</html>
