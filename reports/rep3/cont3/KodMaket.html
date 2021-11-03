@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../../../imgs/photo2.png" width="1500px" height="300px">
+    <p>CSS: </p>
+    <pre><code>
+                td {
+                    background-color: #3366CC; 
+                }
+                ol{
+                    float: left;
+                }
+                ul{
+                    float: left;
+                }
+                
+                .main {
+                    
+                    display: flex;
+                    max-width: 100%;
+                }
+                .block{
+                    display: flex;
+                    width: 50%;
+                    flex-wrap: wrap;
+                }
+                .section {
+                    display: flex;
+                    flex-direction: column;
+                    flex-basis: 50%;
+                }
+                #reklama {
+                    position: absolute;
+                    margin: 10px;
+                    left: 500px;
+                    top: 120px; 
+                    width: 225px; 
+                    padding: 5px; 
+                    background: #f0f0f0; 
+                }
+                <p>HTML: </p>
+        &lth1 align="center"&gt&lti&gtТуристична компанія&lt/i&gt&lt/h1&gt
+        &ltdiv class="main" &gt
+            &ltdiv class="block"&gt
+            &lttable cellspacing="0" cellpadding="4" border="1" &gt
+                &ltcaption&gtТаблиця варіантів турів&lt/caption&gt
+                &lttr &gt
+                    &ltth&gtНомер тура&lt/th&gt
+                    &ltth&gtКраїна&lt/th&gt
+                    &ltth&gtЦіна,$(на 1 людину)&lt/th&gt
+                    &ltth&gtТривалість, дні&lt/th&gt
+                &lt/tr&gt
+                &lttr align="center"&gt
+                    &lttd&gt1&lt/td&gt
+                    &lttd&gtЄгипет&lt/td&gt
+                    &lttd&gt70&lt/td&gt
+                    &lttd&gt7&lt/td&gt
+                &lt/tr&gt
+                &lttr align="center"&gt
+                    &lttd&gt2&lt/td&gt
+                    &lttd&gtУкраїна&lt/td&gt
+                    &lttd&gt70&lt/td&gt
+                    &lttd&gt9&lt/td&gt
+                &lt/tr&gt
+                &lttr align="center"&gt
+                    &lttd&gt3&lt/td&gt
+                    &lttd&gtТурція&lt/td&gt
+                    &lttd&gt69&lt/td&gt
+                    &lttd&gt7&lt/td&gt
+                &lt/tr&gt
+                &lttr align="center"&gt
+                    &lttd&gt4&lt/td&gt
+                    &lttd&gtЧорногорія&lt/td&gt
+                    &lttd&gt100&lt/td&gt
+                    &lttd&gt7&lt/td&gt
+                &lt/tr&gt
+                &lttr align="center"&gt
+                    &lttd&gt5&lt/td&gt
+                    &lttd&gtНімеччина&lt/td&gt
+                    &lttd&gt200&lt/td&gt
+                    &lttd&gt10&lt/td&gt
+                &lt/tr&gt
+                &lttr align="center"&gt
+                    &lttd&gt6&lt/td&gt
+                    &lttd&gtВелика Британія&lt/td&gt
+                    &lttd&gt250&lt/td&gt
+                    &lttd&gt5&lt/td&gt
+                &lt/tr&gt
+                &lttr align="center"&gt
+                    &lttd&gt7&lt/td&gt
+                    &lttd&gtНова Зеландія&lt/td&gt
+                    &lttd&gt100&lt/td&gt
+                    &lttd&gt7&lt/td&gt
+                &lt/tr&gt
+                &lttr align="center"&gt
+                    &lttd&gt8&lt/td&gt
+                    &lttd&gtБолгарія&lt/td&gt
+                    &lttd&gt100&lt/td&gt
+                    &lttd&gt8&lt/td&gt
+                &lt/tr&gt
+                &lttr align="center"&gt
+                    &lttd&gt9&lt/td&gt
+                    &lttd&gtШвеція&lt/td&gt
+                    &lttd&gt100&lt/td&gt
+                    &lttd&gt4&lt/td&gt
+                &lt/tr&gt
+                &lttr align="center"&gt
+                    &lttd&gt10&lt/td&gt
+                    &lttd&gtНорвегія&lt/td&gt
+                    &lttd&gt200&lt/td&gt
+                    &lttd&gt3&lt/td&gt
+                &lt/tr&gt
+            &lt/table&gt
+            &lt/div&gt
+            &ltdiv class="block"&gt
+                &ltdiv class="section"&gt
+                    &ltp&gtЕгипет&lt/p&gt
+                    &ltimg src="imgs/Египет.jpg" width="289" height="120" alt="Египет"&gt
+                &lt/div&gt
+                &ltdiv class="section"&gt
+                    &ltp&gtУкраїна&lt/p&gt
+                    &ltimg src="imgs/Карпати.jpg" width="289" height="120" alt="Карпати"&gt
+                &lt/div&gt
+                &ltdiv class="section"&gt
+                    &ltp&gtТурція&lt/p&gt
+                    &ltimg src="imgs/Турція.jpg" width="289" height="120" alt="Турція"&gt
+                &lt/div&gt
+                &ltdiv class="section"&gt
+                    &ltp&gtЧорногорія&lt/p&gt
+                    &ltimg src="imgs/Чорногорія.jpg" width="289" height="120" alt="Чорногорія"&gt
+                &lt/div&gt
+            &lt/div&gt
+            &lt/div&gt   
+        
+            &ltp id = "reklama"&gtВигідні тури та пропозиції спеціально для вас! Сонячний Єгипет, мальовнича Україна, дивовижна Нова Зеландія та загадкова Велика Британія чекають на вас!
+                Наявність та тривалість турів можете уточнювати у табличці вище та за номером телефону. 
+                Кращі тури 2021-го року за кращими цінами!&lt/p&gt
+                
+            &ltol &gt
+                &ltli&gtШарм-Ель-Шейх, 3 дні&lt/li&gt
+                &ltli&gtХургада, 1 день&lt/li&gt
+                &ltli&gtХургада, 1 день&lt/li&gt
+                &ltli&gtМарса Алам, 2 дні&lt/li&gt
+                &ltli&gtСафага, 1 день&lt/li&gt
+            &lt/ol&gt
+        
+            &ltul&gt
+                &ltli&gtЛьвів, 2 дні&lt/li&gt
+                &ltli&gtВінниця, 2 дні&lt/li&gt
+                &ltli&gtОдеса, 2 дні&lt/li&gt
+                &ltli&gtЗапоріжжя, 1 день&lt/li&gt
+                &ltli&gtКиїв, 2 дні&lt/li&gt
+            &lt/ul&gt
+            &lta href="Report.html" target="_blank"&gtПерейти до звіту&lt/a&gt
+            </code>
+    </pre>
+    
+</body>
+</html>
