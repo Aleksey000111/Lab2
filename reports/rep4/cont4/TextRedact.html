@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Кравченко Олексій(варінт №4)</p>
+    <a href="../../../Laba4_2.html" target="_blank">До сторінки з тестовим редактором</a><br>
+    <p>Код html: </p>
+    <pre><code>
+    &lttextarea name="name" id="textarea" cols="30" rows="10">text&lt/textarea&gt
+    &ltbutton id="btn"&gtНапівжирний текст&lt/button&gt
+    &ltbutton id="btn1"&gtНахил&lt/button&gt
+    &ltbutton id="btn2"&gtПідкреслення&lt/button&gt
+    &ltbutton id="btn3"&gtЧервоний&lt/button&gt
+    &ltbutton id="btn4"&gtРожевий&lt/button&gt
+    &ltbutton id="btn5"&gtЗелений&lt/button&gt
+    &ltbutton id="btn6"&gtТінь&lt/button&gt
+
+    &ltdiv class="text"&gt&lt/div&gt
+    </code>
+    </pre>
+    <p>Код js: </p>
+    <pre><code>
+    &ltscript type="text/javascript"&gt
+        // Первый способ
+        // let textarea=document.querySelector('#textarea'),
+        //     text = document.querySelector('.text'),
+        //     btn = document.querySelector('#btn');
+        //     btn.addEventListener('click',()=&gt{
+        //         textarea.style.fontWeight="bolder"
+        //     })
+        //     btn1 = document.querySelector('#btn1');
+        //     btn1.addEventListener('click',()=&gt{
+        //         textarea.style.fontStyle="italic"
+        //     })
+        //     btn2 = document.querySelector('#btn2');
+        //     btn2.addEventListener('click',()=&gt{
+        //         textarea.style.textDecoration="underline"
+        //     })
+        //     btn3 = document.querySelector('#btn3');
+        //     btn3.addEventListener('click',()=&gt{
+        //         textarea.style.color="red"
+        //     })
+        //     btn4 = document.querySelector('#btn4');
+        //     btn4.addEventListener('click',()=&gt{
+        //         textarea.style.color="pink"
+        //     })
+        //     btn5 = document.querySelector('#btn5');
+        //     btn5.addEventListener('click',()=&gt{
+        //         textarea.style.color="green"
+        //     })
+        //     btn6 = document.querySelector('#btn6');
+        //     btn6.addEventListener('click',()=&gt{
+        //         textarea.style.textShadow="1px 1px 2px black, 0 0 1em red"
+        //     })
+            
+            
+        // Второй способ
+            let textarea=document.querySelector('#textarea'),
+            text = document.querySelector('.text'),
+            btn = document.querySelector('#btn');
+            btn.addEventListener('click',()=&gt{
+                text.innerHTML=`&ltb&gt ${textarea.value} &lt/b&gt`
+            })
+            btn1 = document.querySelector('#btn1');
+            btn1.addEventListener('click',()=&gt{
+                text.innerHTML=`&lti&gt ${textarea.value} &lt/i&gt`
+            })
+            btn2 = document.querySelector('#btn2');
+            btn2.addEventListener('click',()=&gt{
+                text.innerHTML=`&ltu&gt ${textarea.value} &lt/u&gt`
+            })
+            btn3 = document.querySelector('#btn3');
+            btn3.addEventListener('click',()=&gt{
+                text.innerHTML=`&ltp style="color:red"&gt ${textarea.value} &lt/p&gt`
+            })
+            btn4 = document.querySelector('#btn4');
+            btn4.addEventListener('click',()=&gt{
+                text.innerHTML=`&ltp style="color:pink"&gt ${textarea.value} &lt/p&gt`
+            })
+            btn5 = document.querySelector('#btn5');
+            btn5.addEventListener('click',()=&gt{
+                text.innerHTML=`&ltp style="color:green"&gt ${textarea.value} &lt/p&gt`
+            })
+            btn6 = document.querySelector('#btn6');
+            btn6.addEventListener('click',()=&gt{
+                textarea.style.textShadow="1px 1px 2px black, 0 0 1em red"
+            })
+            
+        
+        
+    &lt/script&gt
+    </code>
+    </pre>
+    <p>Фото: </p>
+    <img src="../../../imgs/Redact.png" width="800px" height="200px">
+
+    
+</body>
+</html>

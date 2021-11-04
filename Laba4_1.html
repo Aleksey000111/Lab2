@@ -1,24 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1</title>
+    <title>4_1</title>
 </head>
+
 <body>
+    <div class="textarea-1">
+
+    </div>
+    <div class="textarea-2">
+
+    </div>
+    <div class="textarea-3">
+
+    </div>
     <script type="text/javascript">
-    let A = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    let B = [10, 12, 23, 34, 45, 56, 67, 78, 89, 90];
-    let C = [a, b, c, d, e, f, g, w, h, q];
-    var a = 1/(A[0] - B[0]);
-   
-    alert(A[0])
-    
-    
+        let max = 0,
+            maxIndex = 0;
+        let arr1 = [0, 12, 2, 43, 4, 15, 6, 7, 83, 29];
+        let arr2 = [10, 1, 2, 34, 45, 56, 67, 78, 89, 90];
+        let arr3 = [];
+        for (let i = 0; i < 11; i++) {
 
-
+            if (arr1[i] != arr2[i]) {
+                arr3[i] = 1/(arr2[i] - arr1[i]);
+            } else {
+                arr3[i] = 1;
+            }
+            if (max < arr3[i]) {
+                max = arr3[i]
+                maxIndex = i;
+            }
+        }
+        console.log("before: " + arr3);
+        document.querySelector('.textarea-1').innerHTML=`<p> arr3 before: ${arr3} </p> `
+        arr3[maxIndex] = arr3[0];
+        arr3[0] = max;
+        console.log("max number: " + max);
+        console.log("after: " + arr3);
+        document.querySelector('.textarea-2').innerHTML=`<p> arr3 after: ${arr3}</p>`
+        
+        for (let j = arr3.length - 1; j > 0; j--) {
+            for (let i = 0; i < j; i++) {
+                 if (arr3[i] > arr3[i + 1]) {
+                    let temp = arr3[i];
+                     arr3[i] = arr3[i + 1];
+                    arr3[i + 1] = temp;
+                }
+            }
+        }
+        document.querySelector('.textarea-3').innerHTML=`<p> arr3 bubble: ${arr3}</p>`
+        
 
     </script>
 </body>
+
 </html>

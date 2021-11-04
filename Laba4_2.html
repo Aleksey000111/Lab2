@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4_2</title>
+</head>
+
+<body>
+    <textarea name="name" id="textarea" cols="30" rows="10">text</textarea>
+    <button id="btn">Напівжирний текст</button>
+    <button id="btn1">Нахил</button>
+    <button id="btn2">Підкреслення</button>
+    <button id="btn3">Червоний</button>
+    <button id="btn4">Рожевий</button>
+    <button id="btn5">Зелений</button>
+    <button id="btn6">Тінь</button>
+
+    <div class="text"></div>
+    <script type="text/javascript">
+        // Первый способ
+        // let textarea=document.querySelector('#textarea'),
+        //     text = document.querySelector('.text'),
+        //     btn = document.querySelector('#btn');
+        //     btn.addEventListener('click',()=>{
+        //         textarea.style.fontWeight="bolder"
+        //     })
+        //     btn1 = document.querySelector('#btn1');
+        //     btn1.addEventListener('click',()=>{
+        //         textarea.style.fontStyle="italic"
+        //     })
+        //     btn2 = document.querySelector('#btn2');
+        //     btn2.addEventListener('click',()=>{
+        //         textarea.style.textDecoration="underline"
+        //     })
+        //     btn3 = document.querySelector('#btn3');
+        //     btn3.addEventListener('click',()=>{
+        //         textarea.style.color="red"
+        //     })
+        //     btn4 = document.querySelector('#btn4');
+        //     btn4.addEventListener('click',()=>{
+        //         textarea.style.color="pink"
+        //     })
+        //     btn5 = document.querySelector('#btn5');
+        //     btn5.addEventListener('click',()=>{
+        //         textarea.style.color="green"
+        //     })
+        //     btn6 = document.querySelector('#btn6');
+        //     btn6.addEventListener('click',()=>{
+        //         textarea.style.textShadow="1px 1px 2px black, 0 0 1em red"
+        //     })
+            
+            
+        // Второй способ
+            let textarea=document.querySelector('#textarea'),
+            text = document.querySelector('.text'),
+            btn = document.querySelector('#btn');
+            btn.addEventListener('click',()=>{
+                text.innerHTML=`<b> ${textarea.value} </b>`
+            })
+            btn1 = document.querySelector('#btn1');
+            btn1.addEventListener('click',()=>{
+                text.innerHTML=`<i> ${textarea.value} </i>`
+            })
+            btn2 = document.querySelector('#btn2');
+            btn2.addEventListener('click',()=>{
+                text.innerHTML=`<u> ${textarea.value} </u>`
+            })
+            btn3 = document.querySelector('#btn3');
+            btn3.addEventListener('click',()=>{
+                text.innerHTML=`<p style="color:red"> ${textarea.value} </p>`
+            })
+            btn4 = document.querySelector('#btn4');
+            btn4.addEventListener('click',()=>{
+                text.innerHTML=`<p style="color:pink"> ${textarea.value} </p>`
+            })
+            btn5 = document.querySelector('#btn5');
+            btn5.addEventListener('click',()=>{
+                text.innerHTML=`<p style="color:green"> ${textarea.value} </p>`
+            })
+            btn6 = document.querySelector('#btn6');
+            btn6.addEventListener('click',()=>{
+                textarea.style.textShadow="1px 1px 2px black, 0 0 1em red"
+            })
+            
+        
+        
+    </script>
+</body>
+
+</html>
